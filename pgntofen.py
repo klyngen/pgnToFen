@@ -49,7 +49,8 @@ class PgnToFen:
         return fenpos
 
     def printFen(self):
-        print(self.getFen())
+        #print(self.getFen())
+        a = 1 +1
 
     def moves(self, moves):
         if isinstance(moves, str):
@@ -60,8 +61,8 @@ class PgnToFen:
             if(result in ['1/2-1/2', '1-0', '0-1']):
                 self.result = result
                 pgnMoves = pgnMoves[:-1]
-            print('pgnMoves')
-            print(pgnMoves)
+            #print('pgnMoves')
+            #print(pgnMoves)
             return self.pgnToFen(pgnMoves)
         else:
             return self.pgnToFen(moves)
